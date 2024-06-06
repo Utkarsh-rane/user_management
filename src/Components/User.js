@@ -25,14 +25,14 @@ const UserDashboard = ({ user, onLogout, onUpdateUser }) => {
     <div>
       <h1>Welcome, {user.firstName} </h1>
       <div>
-        <h3>User Profile</h3>
+        <h4>User Profile</h4>
         <strong>First Name</strong>: {user.firstName} <br></br>
         <strong>Last Name</strong>: {user.lastName} <br></br>
         <strong>Username</strong>: {user.username} <br></br>
         <strong>Role</strong>: {user.role} <br></br>
         <strong>Password</strong>: {user.password} <br></br>
       </div> <br></br>
-      
+
       <button onClick={() => setIsEditing(!isEditing)}>
         {isEditing ? 'Cancel' : 'Update Profile'}
       </button>
